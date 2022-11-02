@@ -24,7 +24,7 @@
 .container {
   max-width: 80vw;
   margin: 0 auto;
-  padding: 32px 64px;
+  padding: 64px 128px;
 }
 
 h1,
@@ -42,9 +42,10 @@ p {
 
 button {
   padding: 8px 16px;
-  border-radius: 16px;
+  border-radius: 6px;
   background: var(--blue);
   color: var(--white);
+  border: 0;
 }
 
 /*
@@ -73,6 +74,7 @@ header .container {
   margin: 0;
   padding: 0;
   cursor: pointer;
+  font-size: var(--font-sm);
 }
 
 /*
@@ -107,4 +109,90 @@ header .container {
 .hero-content h1 {
   font-size: var(--font-xl);
   font-weight: 900;
+}
+
+/*
+    Info Section
+*/
+
+.info .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info .container h2 {
+  font-size: var(--font-lg);
+  font-weight: 900;
+  margin-bottom: 64px;
+}
+
+.info .container .box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+.image-box {
+  width: 250px;
+  text-align: center;
+}
+
+.image-box img {
+  border-radius: 16px;
+  border: 4px solid var(--blue);
+  margin-bottom: 16px;
+}
+
+/*
+    Quote Section
+*/
+
+.quote {
+  background: var(--gray);
+  font-size: var(--font-lg);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.quote p {
+  text-align: right;
+  font-style: normal;
+  font-weight: 900;
+  font-size: var(--font-sm);
+}
+
+/*
+    Footer Section
+*/
+
+footer .container .box {
+  width: 100%;
+  background: var(--blue);
+  border-radius: 16px;
+  padding: 32px 128px;
+  color: var(--white);
+  display: flex;
+}
+
+footer button {
+  border: 2px solid var(--gray);
+}
+
+footer .container .box .col:first-child {
+  flex: 2;
+}
+
+footer .container .box .col:last-child {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer .copyright {
+  background: var(--black);
+  color: var(--white);
+  padding: 32px 64px;
+  text-align: center;
 }
